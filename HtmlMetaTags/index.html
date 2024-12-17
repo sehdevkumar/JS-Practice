@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'nonce-random123456'; script-src 'self' 'nonce-random123456';">
+    
+    <title>Meta Tags</title>
+    <link rel="icon" href="./favicon.png"/>
+    <link rel="stylesheet" href="./external.css"/>
+
+    <noscript>
+        <a href="https://www.google.com">Google Link</a>
+    </noscript>
+    
+    <style nonce="random123456">
+        p {
+            color: red;
+        }
+    </style>
+    
+    <script nonce="random123456">
+        alert("Hello world");
+    </script>
+</head>
+<body>
+    <p>
+        Meta Tags: Hey we can change the behavior of the applications
+    </p>
+</body>
+</html>
