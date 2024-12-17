@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Example</title>
+    <style>
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tfoot {
+            background-color: #f9f9f9;
+            font-weight: bold;
+        }
+        .highlight {
+            background-color: #e0f7fa;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!-- Table Caption -->
+        <caption>Employee Performance Report</caption>
+
+        <!-- Column Styling Using colgroup -->
+        <colgroup>
+            <col style="background-color: #f0f8ff;"> <!-- Applies to 1st column -->
+            <col> <!-- No specific style for 2nd column -->
+            <col class="highlight"> <!-- Applies to 3rd column -->
+        </colgroup>
+
+        <!-- Table Head -->
+        <thead>
+            <tr>
+                <th>Employee Name</th>
+                <th>Department</th>
+                <th>Performance Score</th>
+            </tr>
+        </thead>
+
+        <!-- Table Body -->
+        <tbody>
+            <tr>
+                <td>Alice</td>
+                <td>Sales</td>
+                <td>85%</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>Marketing</td>
+                <td>90%</td>
+            </tr>
+            <tr>
+                <td>Charlie</td>
+                <td>HR</td>
+                <td>78%</td>
+            </tr>
+        </tbody>
+
+        <!-- Table Footer -->
+        <tfoot>
+            <tr>
+                <td colspan="2">Average Score</td>
+                <td>84.3%</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
