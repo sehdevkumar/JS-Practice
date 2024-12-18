@@ -8,7 +8,11 @@
     <title>Media Tags</title>
 
     <style>
-      video {
+      video,
+      audio,
+      img,
+      picture,
+      iframe {
         width: 100%;
         height: 100%;
       }
@@ -30,8 +34,37 @@
       <h2>Audio Tag</h2>
 
       <audio controls>
-         <source src="https://dl.espressif.com/dl/audio/ff-16b-2c-44100hz.mp3" type="audio/mp3"/>
+        <source src="https://dl.espressif.com/dl/audio/ff-16b-2c-44100hz.mp3" type="audio/mp3" />
       </audio>
+    </section>
+
+    <section class="img-tag">
+      <h2>Image Tag</h2>
+
+      <img src="https://picsum.photos/200/300" alt="Random Image" />
+    </section>
+
+    <section class="picture-tag">
+      <h2>Picture Tag</h2>
+
+      <picture>
+        <source
+          srcset="https://picsum.photos/200/300?image=10 1x, https://picsum.photos/400/600?image=10 2x"
+          media="(min-width: 600px)"
+        />
+        <img src="https://picsum.photos/200/300?image=10" alt="Random Image" />
+      </picture>
+    </section>
+
+    <section class="iframe-tag">
+      <h2>Iframe Tag</h2>
+
+      <iframe
+        src="https://www.youtube.com/embed/tgbNymZ7vqY"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </section>
   </body>
 </html>
